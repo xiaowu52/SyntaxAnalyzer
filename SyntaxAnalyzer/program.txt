@@ -1,0 +1,35 @@
+program main;
+const a:=10, b :=20, c := 30;
+var x, y, z;
+
+procedure compute(p, q);
+const factor := 2;
+var result;
+begin
+  result := p * q + factor;
+  if result > 50 then
+    write(result)
+  else
+    write(0)
+end;
+
+procedure processInputs();
+var temp;
+begin
+  read(x, y);
+  temp := x;
+  while temp <= y do
+  begin
+    z := temp * 2; 
+    if odd(z) then
+      write(z)
+    else
+      write(z - 1);
+    temp := temp + 1
+  end
+end
+
+begin
+  call compute(a, b);
+  call processInputs()
+end#

@@ -1,0 +1,30 @@
+progrom TestProgram
+const max : 100, min := 0;
+var count, sum, x, y, z;
+procedure Update value);
+begin
+    if value > x then
+        value := max
+    else 
+        if value < min then
+          value := min;
+    count := count + 1;
+    sum := sum + value
+end;
+procedure DisplayResults();
+begin
+    write(count, sum)
+end
+begin
+    count := 0;
+    sum := 0;
+    while count < 5 do
+        begin
+            read(x+5);
+            call Update(x);
+        end;
+    if sum > 50 then
+        call DisplayResults()
+    else
+        write();
+end#

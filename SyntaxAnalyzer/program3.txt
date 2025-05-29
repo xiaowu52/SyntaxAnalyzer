@@ -1,0 +1,25 @@
+program NestedProceduresTest
+var a, b, result;
+procedure Calculate(x, y);
+    procedure Multiply();
+    begin
+        result := x * y;
+    end;
+    procedure Add();
+    begin
+        result := x + y;
+    end;
+procedure Test1();
+begin
+    if  then
+        call Multiply()
+    else
+        call Add();
+    a := 10;
+    b := 20;
+    call Calculate(a, b);
+    if result / 2 = 0 then
+        write(result)
+    else
+        write(result);
+end#
